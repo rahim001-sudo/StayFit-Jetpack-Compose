@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">StayFit</string>
+    <string name="get_started">Get Started</string>
+    <string name="everybody_can_train">Everybody Can Train</string>
+    <string name="fit">FIT</string>
+    <string name="stay">STAY</string>
+    <string name="track_your_goal">Track Your Goal</string>
+    <string name="don_t_worry_if_you_have_trouble_determining_your_goals_we_can_help_you_determine_your_goals_and_track_your_goals">Don\'t worry if you have trouble determining your goals, We can help you determine your goals and track your goals</string>
+    <string name="get_burn">Get Burn</string>
+    <string name="let_s_keep_burning_to_achive_yours_goals_it_hurts_only_temporarily_if_you_give_up_now_you_will_be_in_pain_forever">Let’s keep burning, to achive yours goals, it hurts only temporarily, if you give up now you will be in pain forever</string>
+    <string name="eat_well">Eat Well</string>
+    <string name="let_s_start_a_healthy_lifestyle_with_us_we_can_determine_your_diet_every_day_healthy_eating_is_fun">Let\'s start a healthy lifestyle with us, we can determine your diet every day. healthy eating is fun</string>
+    <string name="improve_sleep_quality">Improve Sleep  Quality</string>
+    <string name="improve_the_quality_of_your_sleep_with_us_good_quality_sleep_can_bring_a_good_mood_in_the_morning">Improve the quality of your sleep with us, good quality sleep can bring a good mood in the morning</string>
+    <string name="already_have_an_account">"Already have an account? "</string>
+    <string name="login">Login</string>
+    <string name="or">Or</string>
+    <string name="register">Register</string>
 </resources>
