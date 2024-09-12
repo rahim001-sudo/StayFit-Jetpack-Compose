@@ -13,12 +13,12 @@ val Typography = Typography(
     titleSmall = TextStyle(
         fontFamily = AppFont.fontFamily,
         fontWeight = FontWeight.Bold
-    )
-    ,
+    ),
     titleLarge = TextStyle(
         fontFamily = AppFont.fontFamily,
         fontWeight = FontWeight.Normal
     )
+
 )
 
 object AppFont {

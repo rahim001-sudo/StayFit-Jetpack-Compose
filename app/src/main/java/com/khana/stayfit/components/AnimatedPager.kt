@@ -2,11 +2,15 @@ package com.khana.stayfit.components
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -16,10 +20,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalHapticFeedback
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.khana.stayfit.ui.theme.AppFont
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -51,23 +59,27 @@ internal fun AnimatedViewPager(
             }
         }
     }
+    Column(horizontalAlignment = Alignment.CenterHorizontally){
 
-    HorizontalPager(
-        modifier = modifier,
-        state = pagerState,
-        contentPadding = PaddingValues(horizontal = 70.dp),
-        verticalAlignment = Alignment.CenterVertically,
-    ) { absolutePageIndex ->
-        val resolvedPageContentIndex = absolutePageIndex % drawables.size
-        PageLayout(
-            modifier = Modifier
-                .width(pageSize)
-                .height(pageSize*1.2f)
-                .pagerAnimation(
-                    pagerState = pagerState,
-                    thisPageIndex = absolutePageIndex,
-                ),
-            drawable = drawables[resolvedPageContentIndex],
-        )
+        HorizontalPager(
+            modifier = modifier,
+            state = pagerState,
+            contentPadding = PaddingValues(horizontal = 70.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) { absolutePageIndex ->
+            val resolvedPageContentIndex = absolutePageIndex % drawables.size
+            PageLayout(
+                modifier = Modifier
+                    .width(pageSize)
+                    .height(pageSize*1.2f)
+                    .pagerAnimation(
+                        pagerState = pagerState,
+                        thisPageIndex = absolutePageIndex,
+                    ),
+                drawable = drawables[resolvedPageContentIndex],
+            )
+        }
     }
+
+
 }
