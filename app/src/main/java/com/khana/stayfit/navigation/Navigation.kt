@@ -12,6 +12,7 @@ import com.himanshoe.charty.line.LineChart
 import com.himanshoe.charty.line.model.LineData
 import com.khana.stayfit.screens.CompleteProfile
 import com.khana.stayfit.screens.CreateAccount
+import com.khana.stayfit.screens.HomeScreen
 import com.khana.stayfit.screens.LoginAccount
 import com.khana.stayfit.screens.OnBoardingScreen
 import com.khana.stayfit.screens.PostRegisterPager
@@ -47,7 +48,7 @@ fun Navigation(){
      val navController = rememberNavController()
      NavHost(navController, startDestination = Screen.SplashScreen.route){
          composable(route = Screen.SplashScreen.route) {
-               a()
+               HomeScreen()
          }
          composable(Screen.OnBoardingScreen.route) {
                 OnBoardingScreen(navController)

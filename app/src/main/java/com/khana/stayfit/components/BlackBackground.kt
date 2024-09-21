@@ -17,10 +17,10 @@ import com.khana.stayfit.R
 @Preview
 @Composable
 fun BlackBackground(image:Int= R.drawable.ob_4){
-  Surface(shape = RoundedCornerShape(5.dp),
+  Surface(shape = RoundedCornerShape(8.dp),
       color = Color.Black,
       ) {
       Image(painter = painterResource(image), contentDescription = "",
-          modifier = Modifier.padding(5.dp).size(20.dp))
+          modifier = Modifier.size(35.dp).padding(8.dp))
   }
 }

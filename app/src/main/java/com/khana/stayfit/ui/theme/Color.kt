@@ -3,6 +3,8 @@ package com.khana.stayfit.ui.theme
 import androidx.compose.ui.graphics.Color
 
 
+
+val background = Color(0xff2a2c38)
 val color36343A = Color(0xFF36343A)
 val color2a2c38  = Color(0xff2A2c38)
 val color7030D1  = Color(0xff7030D1)

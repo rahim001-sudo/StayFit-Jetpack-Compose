@@ -53,7 +53,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.zIndex
 import coil.compose.AsyncImage
-import com.khana.stayfit.screens.CreateAccount
 import com.khana.stayfit.model.OnboardingPage
 import com.khana.stayfit.navigation.Navigation
 import com.khana.stayfit.ui.theme.StayFitTheme
